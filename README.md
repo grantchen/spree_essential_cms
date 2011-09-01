@@ -129,6 +129,13 @@ Change Log
 
 * Extracted from the Spree Essentials core.
 
+**2011/09/01**
+* I have added paginate function in contents page.
+* default per-page is 10 contents.
+* If you want to modify it.
+* Please modify the /app/models/content.rb the bellow value.
+* `@@per_page = 10'
+
 
 To Do
 -----
