@@ -14,6 +14,7 @@ class PagesController < Spree::BaseController
   
     def get_page
       @page = Page.includes(:images, :contents).active.find_by_path(page_path) rescue nil
+      @contents = @page.contents.paginate(:per_page => Content.per_page, :page => params[:page])
       raise ActionController::RoutingError.new(page_path) if @page.nil?
     end
       
