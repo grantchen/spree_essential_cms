@@ -3,7 +3,6 @@ SpreeEssentialCms
 
 SpreeEssentialCms is a full featured CMS for managing pages and content on your [Spree](http://spreecommerce.com) site.
 
-
 Installation
 ------------
 
